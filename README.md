@@ -2,7 +2,7 @@
 
 **HTML code:** [calculator.html](https://github.com/sinster23/Scientific-Calculator/blob/main/calculator.html)
 
-**CSS code:** [style.css](https://github.com/sinster23/Scientific-Calculator/blob/main/styles.css)
+**CSS code:** [styles.css](https://github.com/sinster23/Scientific-Calculator/blob/main/styles.css)
 
 **JS code:** [calculator.js](https://github.com/sinster23/Scientific-Calculator/blob/main/calculator.js)
 
