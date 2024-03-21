@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator-Simple & Easy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="SHORTCUT ICON" href="calculator.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+</head>
+<body>
+   
+   
+    <div class="container">
+        <div class="shownotes">
+            <input type="button" value="View Instructions" id="instr" onclick="fun()">
+            <p id="tax">1. Operations with '(' provided should end with ')'<br><br>2. nCr and nPr are standalone functions.<br><br>3. For MODE,4 options are provided
+            Select any option with &nbsp&nbsp&nbsp&nbspnumbers provided for each.<br>&nbsp&nbsp&nbsp&nbspFor Quadratic type equation in 'ax^2+bx+c' format and hit &nbsp&nbsp&nbsp&nbspMODE for result.<br>&nbsp&nbsp&nbsp&nbspFor Derivatives type the question & hit MODE for result.<br>&nbsp&nbsp&nbsp&nbspFor Determinants syntax is 'det([a,b,c];[d,e,f])' then hit MODE &nbsp&nbsp&nbsp&nbspfor result.<br>
+            &nbsp&nbsp&nbsp&nbspFor matrix only (2x2)matrix operations are available(+,-,*) &nbsp&nbsp&nbsp&nbspeg:&nbsp&nbsp&nbsp&nbsp[[2,3]*[5,6]] hit MODE for result.<br><br>4. hidden keys--> (a) Press '.' twice for ' , ' (b) Press '.' thrice for ' ; ' &nbsp&nbsp&nbsp&nbsp(c) '//' for ' i '   </p>
+        </div>
+        <div class="cont">
+        <div class="calculator">
+            <form>
+            <div class="display">
+                <input type="text" name="display" id="#disp">
+                
+            </div>
+            <div>
+                <input type="button" value="nCr" onclick="combination()" class="oper1">
+                <input type="button" value="nPr" onclick="permutation()" class="oper1">
+                <input type="button" value="x" onclick="display.value+='x'"class="oper1">
+                <input type="button" value="mode" onclick="mode()" class="oper1">
+                <input type="button" value="x^2" onclick="display.value+='x^2'" class="oper1">
+                <input type="button" value="[ ]" onclick="br3()" class="oper1">
+            </div> 
+            <div>
+                <input type="button" value="rad" onclick="toRadian()" class="oper1">
+                <input type="button" value="√" onclick="sqroot()" class="oper1">
+                <input type="button" value="log" onclick="lg()"class="oper1">
+                <input type="button" value="ln" onclick="ln()" class="oper1">
+                <input type="button" value="(" onclick="br1()" class="oper1">
+                <input type="button" value=")" onclick="br2()" class="oper1">
+            </div> 
+            <div>
+                <input type="button" value="asin" onclick="invsin()" class="oper1">
+                <input type="button" value="sin" onclick="calcsin()" class="oper1">
+                <input type="button" value="AC" onclick="alc()" class="oper">
+                <input type="button" value="DE" onclick="del()" class="oper">
+                <input type="button" value="."  class="oper" id="buttons">
+                <input type="button" value="÷"  class="oper"id="buttons">
+            </div> 
+            <div>
+                <input type="button" value="acos" onclick="acos()" class="oper1">
+                <input type="button" value="cos" onclick="calccos()" class="oper1">
+                <input type="button" value="7"  class="num" id="buttons">
+                <input type="button" value="8"  class="num" id="buttons">
+                <input type="button" value="9"  class="num" id="buttons">
+                <input type="button" value="x"  class="oper" id="buttons">
+            </div> 
+            <div>
+                <input type="button" value="atan" onclick="atan()" class="oper1">
+                <input type="button" value="tan" onclick="calctan()" class="oper1">
+                <input type="button" value="4"  class="num" id="buttons">
+                <input type="button" value="5"  class="num" id="buttons">
+                <input type="button" value="6" class="num" id="buttons">
+                <input type="button" value="-"  class="oper" id="buttons">
+            </div> 
+            <div>
+                <input type="button" value="e" onclick="exp()" class="oper1">
+                <input type="button" value="x^y" onclick="calcpow()" class="oper1">
+                <input type="button" value="1" class="num" id="buttons">
+                <input type="button" value="2" class="num" id="buttons">
+                <input type="button" value="3"  class="num" id="buttons">
+                <input type="button" value="+"  class="oper" id="buttons">
+            </div> 
+            <div>
+                <input type="button" value="π" onclick="pi()" class="oper1">
+                <input type="button" value="x!" onclick="fact()" class="oper1">
+                <input type="button" value="&#8679;" onclick="myfunc()" class="num" id="fx">
+                <input type="button" value="0"  class="num" id="buttons">
+                <input type="button" value="=" id="equals" onclick="calcresult()" class="oper">
+                <input type="button" value="%"  class="oper" id="buttons">
+            </div> 
+        </form>
+        </div>
+    </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
+    
