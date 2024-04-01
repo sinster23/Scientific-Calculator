@@ -1,6 +1,6 @@
 ## Hello! Welcome to my Repository <^^>
 
-**HTML code:** [calculator.html](https://github.com/sinster23/Scientific-Calculator/blob/main/calculator.html)
+**HTML code:** [calculator.html](https://github.com/sinster23/Scientific-Calculator/blob/main/index.html)
 
 **CSS code:** [styles.css](https://github.com/sinster23/Scientific-Calculator/blob/main/styles.css)
 
