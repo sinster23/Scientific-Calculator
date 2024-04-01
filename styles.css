@@ -128,5 +128,25 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+  @media screen and (max-width:550px) {
+    .calculator input{
+        width: 2.5rem;
+        height: 2.5rem;
+    }   
+    .num {
+       font-size: 0.8rem;
+    }  
+    .oper{
+        font-size: 1rem;
+    }
+    .oper1{
+        font-size: 1rem;
+    }
+    .shownotes p{
+        width: 20rem;
+        font-size: 0.8rem;
+    }
+    }
+ 
  
 
